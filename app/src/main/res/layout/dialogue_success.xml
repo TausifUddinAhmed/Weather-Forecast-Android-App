@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:id="@+id/constraintLayoutSelectImageDialogue"
+    android:paddingStart="@dimen/dp32"
+    android:paddingEnd="@dimen/dp32"
+    android:paddingTop="@dimen/dp32"
+    android:paddingBottom="@dimen/dp32">
+
+    <TextView
+        android:id="@+id/textViewTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@id/constraintLayoutSelectImageDialogue"
+        app:layout_constraintTop_toTopOf="@id/constraintLayoutSelectImageDialogue"
+        android:text="test"
+        android:gravity="center"
+        android:fontFamily="@font/font_dmsans_regular"
+        android:textColor="@color/black_light"
+        android:textSize="@dimen/sp22"
+        />
+    <TextView
+        android:id="@+id/textViewSubTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black_light"
+        android:textSize="@dimen/sp20"
+        android:gravity="center"
+        android:fontFamily="@font/font_dmsans_regular"
+        android:layout_marginTop="@dimen/dp16"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textViewTitle"
+        android:text="test">
+
+    </TextView>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/buttonOkay"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:backgroundTint="#3BCA5B"
+        android:text="@string/result_ok"
+        android:textColor="@color/white"
+        android:layout_marginTop="@dimen/dp16"
+        android:fontFamily="@font/font_dmsans_regular"
+        app:layout_constraintTop_toBottomOf="@id/textViewSubTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+    </com.google.android.material.button.MaterialButton>
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
